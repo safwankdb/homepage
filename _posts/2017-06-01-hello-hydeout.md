@@ -1,83 +1,20 @@
 ---
 layout: post
-title: Hello Hydeout
+title: Hello World
+date: 01-07-2019
 excerpt_separator:  <!--more-->
 ---
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+> “Become antifragile or die” - Taleb Nassim
 
-### Keep It Simple
+## Who am I?
 
-In keeping with the original Hyde theme, Hydeout aims to keep the overall
-design lightweight and plugin-free. JavaScript is currently limited only
-to Disqus and Google Analytics (and is only loaded if you provide configuration
-variables).
+I am Mohd Safwan, an undergraduate student at IIT Bombay, and a Computer Vision Engineer at [Augle AI](https://augle.ai). My interests are Deep Learning and Computer Vision. I love taking long walks and even longer naps. Reach out to me at [safwaniitb@gmail.com](mailto:safwaniitb@gmail.com). Know more about me [here](./about).
 
-Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
+## Projects
 
-### Customization
+Projects are good things, perhaps the best of things. In my experience, no good project ever gets completed. Here is a non-exhaustive [list of projects](./projects) I own or have contributed to. Apart from this, have a look at [my GitHub](https://safwankdb@github.io  ).
 
-Hydeout replaces Hyde's class-based theming with the use
-of the following SASS variables:
+## Blog
 
-```scss
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: white !default;
-$sidebar-sticky: true !default;
-$layout-reverse: false !default;
-$link-color: #268bd2 !default;
-```
-
-To override these variables, create your own `assets/css/main.scss` file.
-Define your own variables, then import in Hydeout's SCSS, like so:
-
-```
----
-# Jekyll needs front matter for SCSS files
----
-
-$sidebar-bg-color: #ac4142;
-$link-color: #ac4142;
-$sidebar-sticky: false;
-@import "hydeout";
-```
-
-See the [_variables](https://github.com/fongandrew/hydeout/blob/master/_sass/hydeout/_variables.scss) file for other variables
-you can override.
-
-You can also insert custom head tags (e.g. to load your own stylesheets) by
-defining your own `_includes/custom-head.html` or insert tags at the end
-of the body (e.g. for custom JS) by defining your own
-`_includes/custom-foot.html`.
-
-### New Features
-
-* Hydeout also adds a new tags page (accessible in the sidebar) and a new
-  "category" layout for dedicated category pages.
-
-* Category pages are automatically added to the sidebar. All other pages
-  must have `sidebar_link: true` in their front matter to show up in
-  the sidebar.
-
-* A simple redirect-to-Google search is available. If you want to use
-  Google Custom Search or Algolia or something with more involved,
-  override the `search.html`.
-
-* Disqus integration is ready out of the box. Just add the following to
-  your config file:
-
-  ```yaml
-  disqus:
-    shortname: my-disqus-shortname
-  ```
-
-  If you don't want Disqus or want to use something else, override
-  `comments.html`.
-
-* For Google Analytics support, define a `google_analytics` variable with
-  your property ID in your config file.
-
-There's also a bunch of minor tweaks and adjustments throughout the
-theme. Hope this works for you!
+This is my blog where I try to summarize my thoughts about all kinds of things. Having started recently, I will try to write more often.
