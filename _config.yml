@@ -4,10 +4,10 @@ highlighter:      rouge
 
 # Setup
 title:            MOHD SAFWAN
-tagline:          'A Jekyll theme'
+tagline:          'Homepage'
 description:      'This is me in HTML'
 url:              https://safwankdb.github.io
-baseurl:          '/home'
+baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
