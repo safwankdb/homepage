@@ -3,11 +3,10 @@ layout: page
 title: About
 sidebar_link: true
 ---
-<!-- 
+
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
-</p> -->
+  I love to take long walks and even longer naps. 
+</p>
 
 I am an undergraduate student at the Indian Institute of Technology Bombay pursuing my B.Tech + M.Tech in Electrical Engineering with specialization in Communications and Signal Processing.
 

@@ -85,6 +85,12 @@ input[type="text"], input[type="email"], input[type="search"], input[type="submi
   border-radius: $border-radius;
 }
 
+.centerimg {
+  margin: 0 auto;
+  display: block;
+}
+
+
 button, input[type="submit"] {
   cursor: pointer;
   background: transparent;
