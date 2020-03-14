@@ -19,7 +19,7 @@ I will be implementing the algorithm in Python using NumPy and I will use the fo
 The full project code is available at [GitHub](https://github.com/safwankdb/Harris-Corner-Python)
 
 ### Image Derivatives
-We’ve used Sobel operators of aperture = 3 to compute $$I_x$$ and $$I_y$$ . Since the Sobel operators are seperable filters (have rank 1), we have used the optimised algorithm for calculating the derivatives. We define the following function to filter an image $I$ with a seperable filter whose factors are filter_y$$_{(1×3)}$$ and filter_x$$_{(3×1)}$$
+We’ve used Sobel operators of aperture 3 to compute $$I_x$$ and $$I_y$$ . Since the Sobel operators are seperable filters (have rank 1), we have used the optimised algorithm for calculating the derivatives. We define the following function to filter an image $I$ with a seperable filter whose factors are filter_y$$_{(1×3)}$$ and filter_x$$_{(3×1)}$$
 
 ```python
 def seperable_conv(I, filter_x, filter_y):
@@ -74,7 +74,7 @@ def detect(I, n_g, n_w, k):
     \left.A = \sum_{u}\sum_{v}w(u,v)\begin{bmatrix} I_x^2 & I_xI_y \\\\I_xI_y & I_y^2\end{bmatrix} \right |_{u,v}
 \end{align}
 
-Using the smoothened derivatives $$I_x, I_y$$, we calculate the structure tensor $A$ at every pixel.
+Using the smoothened derivatives $$I_x, I_y$$, we calculate the structure tensor $$A$$ at every pixel.
 
 ```python
 def detect(I, n_g, n_w, k):
@@ -90,7 +90,7 @@ def detect(I, n_g, n_w, k):
     ...
 ```
 ### Eigenvalues
-Since A is a $2×2$ matrix. It’s eigenvalues have a closed form soultion.\\
+Since A is a $$2×2$$ matrix. It’s eigenvalues have a closed form solution.\\
 Let,
 
 \begin{align}
@@ -118,7 +118,7 @@ def detect(I, n_g, n_w, k):
 ![](/assets/img/harris/2.png)
 ### Cornerness Measure
 
-Cornerness measure $C$ was calculated and thresholded at $$0.457$$ (found emperically).
+Cornerness measure $$C$$ was calculated and thresholded at $$0.457$$ (found emperically).
 
 \begin{align}
     C = \lambda_1\lambda_2-k(\lambda_1+\lambda_2)^2
