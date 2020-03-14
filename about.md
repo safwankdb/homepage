@@ -1,5 +1,7 @@
 ---
 layout: page
+paginate:
+  enabled: false
 title: About
 sidebar_link: true
 ---
