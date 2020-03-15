@@ -9,10 +9,12 @@ sidebar_link: true
 </header>
 
 <div class='content'>
-<li>
+<ul> 
   {% for post in site.posts %}
-    <h2><a href="{{ post.url }}"" style="color: #404040""> {{ post.title }}</a></h2>    
+  <li>
+    <h3><a href="{{ post.url }}"" style="color: #404040""> {{ post.title }}</a></h3>    
     {{ post.excerpt }}
+  </li>
   {% endfor %}
-</li>
+</ul>
 </div>
