@@ -3,12 +3,16 @@ layout: default
 sidebar_link: true
 ---
 <header>
-    <h1 class="post-title">Blog</h1>
+  <i>
+    <h1 class="post-title" align="center">{{ site.blog_name }}</h1>
+  </i>
 </header>
 
 <div class='content'>
-{% for post in site.posts %}
-  <h2><a href="{{ post.url }}"" style="color: #000000"">{{ post.title }}</a></h2>    
+<li>
+  {% for post in site.posts %}
+    <h2><a href="{{ post.url }}"" style="color: #404040""> {{ post.title }}</a></h2>    
     {{ post.excerpt }}
-{% endfor %}
+  {% endfor %}
+</li>
 </div>

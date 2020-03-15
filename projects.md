@@ -15,6 +15,7 @@ sidebar_link: true
 
 ## Image Processing
 - [Effectual Palm RoI Extraction - Python](https://safwankdb.github.io/Effectual-Palm-RoI-Extraction/)
+- [Harris Corner Detection - Python](https://safwankdb.github.io/2020/03/14/harris-corner.html)
 - [Mean Shift Segmentation - Python](https://safwankdb.github.io/Mean-Shift-Segmentation/)
 - [CS663 @ IITB Assignments - Python](https://safwankdb.github.io/CS663-Assignments/)
 

@@ -10,11 +10,9 @@ sidebar_link: true
   I love to take long walks and even longer naps. 
 </p>
 
-I am an undergraduate student at the Indian Institute of Technology Bombay pursuing my B.Tech + M.Tech in Electrical Engineering with specialization in Communications and Signal Processing.
+I am an UG student at the Indian Institute of Technology Bombay pursuing my B.Tech + M.Tech in Electrical Engineering with specialization in Communications and Signal Processing.
 
-My interest lies majorly in but not limited to Deep Learning and Computer Vision. Coding has been my hobby since my freshman year in college. It has always amazed me what impact a few lines of code can have on the world. I continue to learn new things and try to build stuff every day because I love doing it.
-
-WnCC, the [Web and Coding Club](https://wncc-iitb.org) of IIT Bombay is like my family away from home. In my sophomore year (2018-19), I joined the club as convener, part of a team of 20 sophomores to carry out activities which help fellow students learn and build an interest in programming.
+My interest lies majorly in but not limited to Deep Learning and Computer Vision. Coding has been my hobby since my freshman year in college. It has always amazed me what impact a few lines of code can have on the world. I continue to learn new things and try to build stuff every day. WnCC, the [Web and Coding Club](https://wncc-iitb.org) of IIT Bombay is like my family away from home. In my sophomore year (2018-19), I joined the club as convener.
 
 I like listening to hip-hop. I love to see my favorite artists spitting multi-syllable rhymes and great wordplays. I enjoy watching sci-fi, dramas, and thrillers and playing video games although I play only occasionally now.
 

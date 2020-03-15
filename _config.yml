@@ -2,6 +2,9 @@
 markdown:         kramdown
 highlighter:      rouge
 
+#Custom
+blog_name: 'How to Slay Dragons'
+
 # Setup
 title:            MOHD SAFWAN
 tagline:          'Homepage'
@@ -18,8 +21,8 @@ author:
   name:           'Mohd Safwan'
   url:            https://safwankdb.github.io
 
-paginate:         10
-paginate-path:    "/blog/page:num/"
+# paginate:         10
+# paginate-path:    "/blog/page:num/"
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
