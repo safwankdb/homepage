@@ -19,4 +19,4 @@ Projects are good things, perhaps the best of things. In my experience, no good 
 
 <h2><a href="./blog" style="color: #000000">Blog</a></h2>    
 
-This is my blog [*{{site.blog_name}}*](./blog) where I try to summarize my thoughts about all kinds of things. Having started recently, I will try to write more often.
+This is my blog [```{{site.blog_name}}```](./blog) where I try to summarize my thoughts about all kinds of things. Having started recently, I will try to write more often.

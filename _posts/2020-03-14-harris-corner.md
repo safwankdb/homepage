@@ -16,7 +16,8 @@ I will be implementing the algorithm in Python using NumPy and I will use the fo
    <img src="/assets/img/harris/chess.png" alt="Test Image" align='center' width="500"/>
 </div>
 
-The full project code is available at [GitHub](https://github.com/safwankdb/Harris-Corner-Python)
+## Source Code
+The full project code is available at [GitHub](https://github.com/safwankdb/Harris-Corner-Python).
 
 ### Image Derivatives
 We’ve used Sobel operators of aperture 3 to compute $$I_x$$ and $$I_y$$ . Since the Sobel operators are seperable filters (have rank 1), we have used the optimised algorithm for calculating the derivatives. We define the following function to filter an image $I$ with a seperable filter whose factors are filter_y$$_{(1×3)}$$ and filter_x$$_{(3×1)}$$

@@ -3,14 +3,17 @@ layout: page
 title: Projects
 sidebar_link: true
 ---
+## Open Source Packages
+- [petyr](https://github.com/safwankdb/petyr) : Affine Tranformation and Homography library for Python 3
+
 ## Computer Vision / Deep Learning
-- [Deep Image Prior - PyTorch](https://safwankdb.github.io/Deep-Image-Prior/)
-- [Variational AutoEncoder - PyTorch](https://safwankdb.github.io/Variational-Auto-Encoder/)
-- [Realtime Coherent Style Transfer for Videos - PyTorch](https://safwankdb.github.io/ReCoNet-PyTorch/)
-- [Wasserstein GAN - PyTorch](https://safwankdb.github.io/Wasserstein-GAN/)
-- [Neural Style Transfer - PyTorch](https://safwankdb.github.io/Neural-Style-Transfer/)
-- [Vanilla GAN - PyTorch](https://safwankdb.github.io/Vanilla-GAN/)
-- [CS763 @ IITB Assignments - Python, MATLAB](https://safwankdb.github.io/CS763-Assignments/)
+- [Deep Image Prior](https://safwankdb.github.io/Deep-Image-Prior/): *'Deep Image Prior'* in PyTorch.
+- [Variational AutoEncoder ](https://safwankdb.github.io/Variational-Auto-Encoder/): *'Auto-Encoding Variational Bayes'* in PyTorch.
+- [Realtime Coherent Style Transfer for Videos](https://safwankdb.github.io/ReCoNet-PyTorch/): *'ReCoNet'* in PyTorch.
+- [Wasserstein GAN](https://safwankdb.github.io/Wasserstein-GAN/): *'Wasserstein GAN'* in PyTorch.
+- [Neural Style Transfer](https://safwankdb.github.io/Neural-Style-Transfer/):*'A Neural Algorithm of Artistic Style'* in PyTorch.
+- [Vanilla GAN - PyTorch](https://safwankdb.github.io/Vanilla-GAN/): *'Generative Adversarial Networks'* in PyTorch.
+- [CS763 @ IITB Assignments](https://safwankdb.github.io/CS763-Assignments/): Various CV/DL algorithms in Python and MATLAB
 
 
 ## Image Processing

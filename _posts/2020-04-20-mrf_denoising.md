@@ -18,13 +18,13 @@ We'll be using a quadratic MRF prior $$g$$ to penalize the difference between ne
     g(u) = |u|^2
 \end{align}
 
-We will start from a blank image a update its values via gradient descent to minimize our objective $$f$$.
+We will start from a blank image a update its values via gradient descent to minimize our objective $$f$$. Here $$x_{i_1},x_{i_2},x_{i_3},x_{i_4}$$ are surrounding pixels of $${x_i}$$.
 
 \begin{align}
     f(x, y) = \sum_{i} [ a(x_i-y_i)^2 + \sum_{n=1}^{4} g(x_i-x_{i_n})]
 \end{align}
 
-Instead of calculating gradients make, we take advantage of PyTorch's autograd.
+Instead of calculating gradients manually, we take advantage of PyTorch's autograd.
 
 ## Implementation
 The code for this project is available in this [Colab Notebook](https://colab.research.google.com/drive/1UEZMA21NyezMhlLdfEFGYJVwtLTZGtxV) and will soon be on GitHub.
