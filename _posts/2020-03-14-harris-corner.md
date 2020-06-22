@@ -4,6 +4,7 @@ title: Harris Corner Detection in Python
 excerpt: Implementing the Harris Corner Detection Algorithm in Python using NumPy
 excerpt_separator:  <!--more-->
 author: Mohd Safwan
+tags: image-processing, python
 ---
 
 ## Algorithm
