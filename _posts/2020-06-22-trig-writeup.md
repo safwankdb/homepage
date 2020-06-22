@@ -95,7 +95,7 @@ Disassembly of section .text:
  804820c:	cd 80                	int    $0x80
 ```
 
-Notice that there are 7 ` ` ` fcos ` `  ` ops in the assembly, which is basically an inplace cosine operation. The floating point instructions like `  ` ` fcos, fldl, fstpl... ` ` ` belong to the [x87 instruction set](https://www.wikiwand.com/en/X87). Also, the binary takes a command line argument and returns a string of fixed length (96). 
+Notice that there are 7 ``` fcos ``` ops in the assembly, which is basically an inplace cosine operation. The floating point instructions like ``` fcos, fldl, fstpl... ``` belong to the [x87 instruction set](https://www.wikiwand.com/en/X87). Also, the binary takes a command line argument and returns a string of fixed length (96). 
 
 ``` bash
 $ ./trig gibberish
@@ -108,7 +108,7 @@ Now, we can just reverse engineer whats happening by studying the x87 ops and ca
 
 We'll explore a different route. We noticed that output stops changing when length of input argument exceeds 32 characters. Also, shifting the argument by a factor of 4 seems to shift some output chars in the opposite direction. 
 
-With some trials, we figure out that, an input string ` ` ` ABCDEFGH ` `  ` (A, B, . . represent a block of 4 characters) is mapped to `  ` ` f(H)f(G)f(F)f(E)f(C)f(B)f(A)p(D) ` ` `. Here, $$f(X) \neq  p(X) $$ and output of both is 12 characters in length. 
+With some trials, we figure out that, an input string ``` ABCDEFGH ``` (A, B, . . represent a block of 4 characters) is mapped to ``` f(H)f(G)f(F)f(E)f(C)f(B)f(A)p(D) ```. Here, $$f(X) \neq  p(X) $$ and output of both is 12 characters in length. 
 
 This leads us to the conclusion that if we can just find out the mappings $$f, p$$ and invert them, we get the flag. 
 
@@ -118,21 +118,22 @@ First, we need a wordlist, so we generate one.
 
 ``` python
 import os
-from itertools import permutations
 from tqdm import tqdm
 
 charset = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?@_" + '{' + '}'
-perms = list(permutations(charset, 4))
-
-with open('words.txt', 'w') as f:
-    for i in tqdm(range(len(perms))):
-        f.write(''.join(perms[i])+'\n')
+n = len(charset)
+with open('wordlist.txt', 'w') as f:
+    for i in tqdm(range(n)):
+        for j in range(n):
+            for k in range(n):
+                for l in range(n):
+                    f.write(charset[i]+charset[j]+charset[k]+charset[l]+'\n')
 
 ```
 
-There are 19545240 words, this'll take some time. 
+There are 21381376 words, this'll take some time. 
 
-Second, we need to find the output for each of these words and check for a match in our given output. In 1 call to the executable, we can get outputs for 7 4-char blocks. Running the binary from C++ or Python is easy, but if you also read stdout, it costs time. So, I just write the output in a new file for reading it later because I couldn't find the C++ way to read stdout without the slow ` ` ` Popen() ` ` `. 
+Second, we need to find the output for each of these words and check for a match in our given output. In 1 call to the executable, we can get outputs for 7 4-char blocks. Running the binary from C++ or Python is easy, but if you also read stdout, it costs time. So, I just write the output in a new file for reading it later because I couldn't find the C++ way to read stdout without the slow ``` Popen() ```. 
 
 ``` cpp
 #include <bits/stdc++.h>
@@ -217,7 +218,7 @@ print(flag)
 ``` bash
 $ python3 match.py 
 100%|██████████████████████████████████| 2792177/2792177 [00:08&lt;00:00, 313834.23it/s]
-Csec{H0pu_l34rn3d_R1ght}
+CsecIITB{H0pu_l34rn3d_R1ght}
 ```
 
 But, this is not the flag. That's because we only found the mapping $$f$$. Finding $$p$$ would have taken 7 times longer. We know we are missing a 4-char block, we know the position too. We can make some educated guesses for the missing block, it's not that hard. 
