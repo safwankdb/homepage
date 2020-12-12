@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="author" content="Mohd Safwan">
+<meta name="description" content="XO (TicTacToe) game. Part of a course project for EE782, IIT Bombay.">
+<meta name="keywords" content="artificial intelligence,AI,machine learning,tictactoe,xo game">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>XO Game Server</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="xo.css">
+</head>
+<body>
+	<div class="container">
+		<h2>XO Game Server</h2>
+		<div class="row">
+			<div class="col-md">
+				<div id="playing-area"></div>
+			</div>
+			<div class="col-md">
+				<div class="form-group">
+				<p>Size of game: 3 x 3</p> 
+				</div>
+				<div class="form-group">
+				<p>Players:</p>
+				<div class="input-group mb-3">
+				<div class="input-group-prepend"><span class="input-group-text" id="basic-addon3">Agent 1</span></div>
+				<input type="text" class="form-control" id="agent1" aria-describedby="basic-addon3">
+				</div>
+				<div class="input-group mb-3">
+				<div class="input-group-prepend"><span class="input-group-text" id="basic-addon3">Agent 2</span></div>
+				<input type="text" class="form-control" id="agent2" aria-describedby="basic-addon3">
+				</div>
+				<p>Fill in the address where an agent can be reached using WebSockets (e.g. ws://127.0.0.1:8089).
+				If a field is empty a human player is assumed.
+				</p>
+				<button type="button" class="btn btn-secondary" id="restart-btn">Restart game</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		<small><a href="https://github.com/safwankdb/XO-Learning-Environment">Source</a></small>
+		</div>
+	</div>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="xo.js"></script>
+</body>
+</html>
+

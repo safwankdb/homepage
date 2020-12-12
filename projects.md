@@ -3,8 +3,9 @@ layout: page
 title: Projects
 sidebar_link: true
 ---
-## Open Source Packages
+## Open Source Projects
 - [petyr](https://github.com/safwankdb/petyr) : Affine Tranformation and Homography library for Python 3
+- [XO Learning Environment](https://github.com/safwankdb/XO-Learning-Environment): Playground for testing RL algorithms on TicTacToe
 
 ## Computer Vision / Deep Learning
 - [Deep Image Prior](https://safwankdb.github.io/Deep-Image-Prior/): *'Deep Image Prior'* in PyTorch.
