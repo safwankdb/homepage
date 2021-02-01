@@ -9,7 +9,7 @@ tags: image-processing, julia, dynamic-programming
 
 I am going to implement the basic **Seam Carving** algorithm in **Julia**. This method shows the usefulness of dynamic programming.
 
-```bash
+```julia
 using Images, ImageFiltering
 
 download("https://upload.wikimedia.org/wikipedia/commons/c/cb/Broadway_tower_edit.jpg", "test.jpg");
@@ -20,7 +20,7 @@ download("https://upload.wikimedia.org/wikipedia/commons/c/cb/Broadway_tower_edi
 </div>
 
 Use Sobel filters to compute the gradient of the image.
-```bash
+```julia
 function get_energy(img)
 	∇y = luminance.(imfilter(img, Kernel.sobel()[1]))
 	∇x = luminance.(imfilter(img, Kernel.sobel()[2]))
@@ -31,9 +31,17 @@ end;
    <img src="/assets/img/seam_carving/2.png" align='center'/>
 </div>
 
-Next, the algorithm uses dynamic programming to find the vertical seam line with the least energy.
+The key idea is that the value of gradient at any pixel corresponds to how 'valuable' or 'important' to image the object is. This turns out to be a surprisingly good idea for most natural images.
 
-```bash
+To shrink the width by 1 pixel, we find a set of connected pixels (one in each row) such that the sum of their gradients or 'energy' as the authors of the paper called it, is minimized. Such a set is called a **seam**.
+
+The least energy seam can be found in $$ \mathcal{O}(HW) $$ time for an $$ H\times W $$ resolution image given its gradients. The algorithm uses dynamic programming to achieve this. Starting from the bottom row, we can use the following recursion to compute the minimum possible energy for a seam originating at each pixel and going down. If $$ E(x,y) $$ represents this value at pixel $$ (x,y) $$, then
+
+$$
+	M(x,y) = \min \{M(x-1,y-1),M(x,y-1),M(x+1,y-1)\}
+$$
+
+```julia
 function get_min_cost(energy)
 	min_cost = copy(energy);	
 	h, w = size(energy)
@@ -51,7 +59,7 @@ end;
 ```
 Next, we use the precomputed values to find the required seam line by traversing down from the minima on the top row. At each step, choose the neighbor with the least cost.
 
-```bash
+```julia
 function get_seam(min_cost)
 	h,w = size(min_cost)
 	min_idx = argmin(min_cost[1,:])
@@ -77,7 +85,7 @@ The cost function has triangular artifacts as expected since a high energy value
 
 Now we remove the seam pixels and 'stick' the parts.
 
-```bash
+```julia
 function cut_seam(img, seam)
 	new_img = img[:,1:end-1]
 	for i in 1:size(img)[1]
@@ -89,7 +97,7 @@ end;
 ```
 Finally, we can achieve resizing by just repeating the above steps iteratively.
 
-```bash
+```julia
 function shrink_width(img, n)
 	new_img = copy(img)
 	for i in 1:n
@@ -101,11 +109,13 @@ function shrink_width(img, n)
 	new_img
 end;
 
-new_img = shrink_width(img, 200)
+new_img = shrink_width(img, 400)
 ```
 
 <div align='center'>
-   <img src="/assets/img/seam_carving/4.png" align='center'/>
+   <img src="/assets/img/seam_carving/1.png"  width="700"/>
+   <img src="/assets/img/seam_carving/4.png"  width="700"/>
 </div>
+
 
 The results speak for themselves! I would be updating this post soon with detailed descriptions of intermediate steps.
