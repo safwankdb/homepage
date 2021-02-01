@@ -10,8 +10,13 @@ title: Hello World
 
 <h2><a href="./about" style="color: #000000">Who am I?</a></h2>    
 
-
 I am Mohd Safwan, a UG student at IIT Bombay, and co-founder at [Augle AI](https://augle.ai). My interests are Deep Learning and Computer Vision. Reach out to me at [safwaniitb@gmail.com](mailto:safwaniitb@gmail.com) or connect with me at  [LinkedIn](https://www.linkedin.com/in/safwankdb/).
+
+<!-- ![Safwan's GitHub stats](https://github-readme-stats.vercel.app/api?username=safwankdb&theme=dracula) -->
+
+<div align='center'>
+   <img src="https://github-readme-stats.vercel.app/api?username=safwankdb&theme=dracula" alt="Test Image" align='center' width="500"/>
+</div>
 
 <h2><a href="./projects" style="color: #000000">Projects</a></h2>    
 
