@@ -1,7 +1,8 @@
 ---
-layout: index
 title: Hello World
+layout: index
 ---
+
 # Hello World
 
 <p class="message">

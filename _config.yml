@@ -1,47 +1,35 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+---
+title: MOHD SAFWAN
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
-    css_class   : 'syntax'
-#Custom
-blog_name: 'Segmentation Fault'
-
-# Setup
-title:            MOHD SAFWAN
-tagline:          'Homepage'
-description:      'This is me in HTML'
-url:              https://safwankdb.github.io
-baseurl:          ''
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
-version:         '4.20'
+    css_class: syntax
+blog_name: Segmentation Fault
+tagline: Homepage
+description: This is me in HTML
+url: https://safwankdb.github.io
+baseurl: ''
+version: '4.20'
 author:
-  name:           'Mohd Safwan'
-  url:            https://safwankdb.github.io
-
-# paginate:         10
-# paginate-path:    "/blog/page:num/"
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
-
+  name: Mohd Safwan
+  url: https://safwankdb.github.io
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-# Sidebar link settings
-sidebar_home_link:  true
-sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
+- jekyll-feed
+- jekyll-gist
+- jekyll-paginate
+sidebar_home_link: true
+sidebar_blog_link: "/blog"
 disqus:
-  shortname: 'safwankdb'
-
+  shortname: safwankdb
 google-analytics: UA-154849191-1

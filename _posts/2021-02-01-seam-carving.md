@@ -1,10 +1,14 @@
 ---
-layout: post
 title: Content-Aware Image Resizing with Julia
+date: 2021-02-01 00:00:00 Z
+tags:
+- image-processing,
+- julia,
+- dynamic-programming
+layout: post
 excerpt: Implementing the basic Seam Carving algorithm in Julia.
-excerpt_separator:  <!--more-->
+excerpt_separator: "<!--more-->"
 author: Mohd Safwan
-tags: image-processing, julia, dynamic-programming
 ---
 
 I am going to implement the basic **Seam Carving** algorithm in **Julia**. This method shows the usefulness of dynamic programming.

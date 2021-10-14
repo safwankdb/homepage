@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Image Denoising with Markov Random Fields
-excerpt:  A maximum-a-posteriori bayesian image denoising algorithm in PyTorch.
+date: 2020-04-20 00:00:00 Z
+layout: post
+excerpt: A maximum-a-posteriori bayesian image denoising algorithm in PyTorch.
 author: Mohd Safwan
 ---
 

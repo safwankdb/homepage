@@ -1,11 +1,12 @@
 ---
-layout: post
-title: "Post: Video (YouTube)"
+title: 'Post: Video (YouTube)'
+date: 2010-06-02 00:00:00 Z
 categories:
-  - Post Formats
+- Post Formats
 tags:
-  - Post Formats
-last_modified_at: 2017-03-23T15:33:37-04:00
+- Post Formats
+layout: post
+last_modified_at: 2017-03-23 19:33:37 Z
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

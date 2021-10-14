@@ -1,8 +1,9 @@
 ---
-layout: page
 title: Projects
+layout: page
 sidebar_link: true
 ---
+
 ## Open Source Projects
 - [petyr](https://github.com/safwankdb/petyr) : Affine Tranformation and Homography library for Python 3
 - [XO Learning Environment](https://github.com/safwankdb/XO-Learning-Environment): Playground for testing RL algorithms on TicTacToe

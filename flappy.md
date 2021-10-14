@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Flappy Bird but Harder
+layout: post
 excerpt: A harder version of flappy bird in javascript.
-excerpt_separator:  <!--more-->
+excerpt_separator: "<!--more-->"
 author: Mohd Safwan
 tags: javascript, game
 ---

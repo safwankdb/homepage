@@ -1,6 +1,7 @@
 ---
-layout: category
 title: Edge Case
+date: 2021-10-14 10:10:46.630000000 Z
+layout: category
 ---
 
 Sample category page. You need to create a page for each category.

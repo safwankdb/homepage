@@ -1,10 +1,14 @@
 ---
+title: 'CsecCTF IITB Writeup: I hate Assembly'
+date: 2020-06-22 00:00:00 Z
+tags:
+- reverse-engineering,
+- ctf
 layout: post
-title: "CsecCTF IITB Writeup: I hate Assembly"
-excerpt: Why read assembly code when you can brute force a binary executable for the flag?
-excerpt_separator:  <!--more-->
+excerpt: Why read assembly code when you can brute force a binary executable for the
+  flag?
+excerpt_separator: "<!--more-->"
 author: Mohd Safwan
-tags: reverse-engineering, ctf
 ---
 
 The CyberSecurity Club IITB conducts an yearly [CsecCTF](https://ctf.cseciitb.in/). This was also my first CTF. There were many interesting questions but the one we were not able to solve until the final moments was **trig**. Luckily, we were able to hack a solution in the final few hours and won the whole thing (Go team lolwamen!!). 

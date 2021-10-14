@@ -1,11 +1,14 @@
 ---
-title: "Markup: Syntax Highlighting"
-layout: post
-excerpt: "Post displaying the various ways one can highlight code blocks with Jekyll. Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{% highlight %}` tag."
-last_modified_at: 2012-02-05T10:27:01-05:00
+title: 'Markup: Syntax Highlighting'
+date: 2012-02-05 00:00:00 Z
 tags:
-  - code
-  - syntax highlighting
+- code
+- syntax highlighting
+layout: post
+excerpt: Post displaying the various ways one can highlight code blocks with Jekyll.
+  Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{%
+  highlight %}` tag.
+last_modified_at: 2012-02-05 15:27:01 Z
 ---
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]

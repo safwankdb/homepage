@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Hello Hydeout
-excerpt_separator:  <!--more-->
+date: 2017-06-01 00:00:00 Z
+layout: post
+excerpt_separator: "<!--more-->"
 ---
 
 Hydeout updates the original [Hyde](https://github.com/poole/hyde)
