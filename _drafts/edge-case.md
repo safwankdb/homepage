@@ -1,6 +1,6 @@
 ---
 title: Edge Case
-date: 2021-10-14 10:10:46.630000000 Z
+date: 2021-10-14 10:10:46 Z
 layout: category
 ---
 
