@@ -2,8 +2,8 @@
 title: Binary Lifting with C++
 date: 2021-12-10 00:00:00 Z
 tags:
-- algorithms,
-- data-structures,
+- algorithm
+- data-structures
 - C++
 layout: post
 excerpt: Binary lifting algorithm with C++ code
@@ -13,7 +13,7 @@ author: Mohd Safwan
 
 I've had quite a lot of practice with DSA questions while preparing for my placements (writing a summary of that right now). I'm gonna intoduce a new algorithm which I found very interesting.
 
-Let's look at a simple looking question available at [https://cses.fi/problemset/task/1750]().
+Let's look at a simple looking question [Planets Queries I](https://cses.fi/problemset/task/1750).
 
 We have a graph $$G = (V, E)$$ where there is a single edge going out from each vertex and there are no self loops. Now, we need to answer queries of the form $$(x, k)$$ where you start at vertex $$x$$ and take $$k$$ steps and output the vertex reached.
 
@@ -51,7 +51,7 @@ int main() {
 }
 ```
 
-To answer each query, we just break $k$ into its binary paritions.
+To answer each query, we just break $$k$$ into its binary paritions.
 
 ```c++
 int main() {
