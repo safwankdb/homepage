@@ -46,7 +46,7 @@ int main() {
     // Fill next rows using the algorithm described
     for (int lg = 1; lg < LOG; lg++) 
         for (int i = 1; i <= n; i++)
-            jump[lg][i] = jump[lg-1][jump[lg-1][]]
+            jump[lg][i] = jump[lg-1][jump[lg-1]]
     // Answer Queries
 }
 ```

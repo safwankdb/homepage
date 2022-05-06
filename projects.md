@@ -5,8 +5,9 @@ sidebar_link: true
 ---
 
 ## Open Source Projects
-- [petyr](https://github.com/safwankdb/petyr) : Affine Tranformation and Homography library for Python 3
-- [XO Learning Environment](https://github.com/safwankdb/XO-Learning-Environment): Playground for testing RL algorithms on TicTacToe
+- [QOI C++](https://github.com/safwankdb/QOI-Cpp) : Single pass lossless Image Compression (20x faster than PNG).
+- [petyr](https://github.com/safwankdb/petyr) : Affine Tranformation and Homography library for Python3.
+- [XO Learning Environment](https://github.com/safwankdb/XO-Learning-Environment): Playground for testing RL algorithms on TicTacToe.
 
 ## Computer Vision / Deep Learning
 - [Deep Image Prior](https://safwankdb.github.io/Deep-Image-Prior/): *'Deep Image Prior'* in PyTorch.
@@ -15,7 +16,7 @@ sidebar_link: true
 - [Wasserstein GAN](https://safwankdb.github.io/Wasserstein-GAN/): *'Wasserstein GAN'* in PyTorch.
 - [Neural Style Transfer](https://safwankdb.github.io/Neural-Style-Transfer/):*'A Neural Algorithm of Artistic Style'* in PyTorch.
 - [Vanilla GAN - PyTorch](https://safwankdb.github.io/Vanilla-GAN/): *'Generative Adversarial Networks'* in PyTorch.
-- [CS763 @ IITB Assignments](https://safwankdb.github.io/CS763-Assignments/): Various CV/DL algorithms in Python and MATLAB
+- [CS763 @ IITB Assignments](https://safwankdb.github.io/CS763-Assignments/): Various CV/DL algorithms in Python and MATLAB.
 
 
 ## Image Processing
